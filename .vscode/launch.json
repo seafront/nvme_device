@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.mPcrosoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run GTests",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/nvme_tests",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake Build",
+            "breakpointMode": "file",
+            "initCommands": [
+                "breakpoint set -E c++ -G true"
+            ]
+        }
+    ]
+}
